@@ -4,6 +4,7 @@
 
 + Als erstes habe ich das [Dockerfile](./Dockerfile) erstellt. Dabei habe ich mich extra für httpd damit ich so wenig befehl in das [Dockerfile](./Dockerfile) Schreiben muss.
 + Als nächtest habe ich das image **website** erstellt. <pre><code>docker build website . </code></pre>
++ Als nächstes habe ich auf dem Desktop den Ordner **Logs** erstellt(für die Container Log Dateien) zudem habe ich meine Webseite aus dem ersten Lehrjahr in einem Ordner auf dem Desktop namens **website** gespeichert.
 + Als Letztes habe ich den Docker gestartet: <pre><code>docker run -d --name web -p 8080:80 -v /home/vmadmin/Desktop/Logs/:usr/local/apache2/logs/ -v /home/vmadmin/Desktop/website/:usr/local/apache2/htdocs/</code></pre> 
     + -d = Starte den Container im Hintergrund
     + --name = definiert den Namen des Container
