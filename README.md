@@ -11,3 +11,4 @@
     + -v:
         + 1: Verbindet den **Logs** Ordner auf dem Desktop mit dem im Conatiner
         + 2: Verbindet den **website** Ordner auf dem Desktop mit dem Ordner **htdocs** im Conatiner
++ Mit dem Browser unter **localhost:8080** kann man nun auf die Webseite zugreifen.
